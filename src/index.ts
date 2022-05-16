@@ -1,9 +1,11 @@
-import "./styles.css";
+let numero1: number = 0;
+let numero2: number = 0;
+let resultado: number = 0;
 
-document.getElementById("app").innerHTML = `
-<h1>Hello Vanilla!</h1>
-<div>
-  We use the same configuration as Parcel to bundle this sandbox, you can find more
-  info about Parcel 
-  <a href="https://parceljs.org" target="_blank" rel="noopener noreferrer">here</a>.
-</div>`;
+numero1 = Number(prompt("infrese el primer numero entero"));
+numero2 = Number(prompt("ingrese el segundo numero entero"));
+
+for (let i: number = numero1; i <= numero2; i++) {
+  resultado = resultado + i;
+}
+console.log("la suma entre los numeros ingresados es: ", resultado);
